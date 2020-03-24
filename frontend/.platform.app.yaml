@@ -11,6 +11,8 @@ hooks:
     # Build hooks can modify the application files on disk but not access any services like databases.
     build: |
       npm run build
+      cp test.sh testing/test.sh
+      chmod +x testing/test.sh
 
 # The size of the persistent disk of the application (in MB).
 disk: 2048
@@ -35,3 +37,6 @@ mounts:
   '/.config':
       source: local
       source_path: cache
+  '/testing':
+      source: local
+      source_path: testing
