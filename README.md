@@ -18,7 +18,7 @@ Gatsby is a free and open source framework based on React that helps developers 
 
 ## Post-install
 
-1. The Wordpress backend is identical to our existing [Wordpress template](https://raw.githubusercontent.com/platformsh-templates/wordpress). Once the Wordpress app has been deployed, run through the Wordpress installer as normal. You will not be asked for database credentials as those are already provided.
+1. The Wordpress backend is identical to our existing [Wordpress template](https://raw.githubusercontent.com/platformsh-templates/wordpress), and is accessible at `wordpress.<Platform.sh generated URL>`. Once the Wordpress app has been deployed, run through the Wordpress installer as normal. You will not be asked for database credentials as those are already provided.
 2. Once you have completed the Wordpress install, copy the generated url for the backend app (`backend.<PLATFORM_ENVIRONMENT>-<PLATFORM_PROJECT>.<REGION>.platformsh.site`) and add it to the `baseUrl` parameter defined in your `gatsby-config.js` file. Commit and push that change to Platform.sh.
 
 ## Customizations

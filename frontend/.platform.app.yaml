@@ -11,8 +11,7 @@ hooks:
     # Build hooks can modify the application files on disk but not access any services like databases.
     build: |
       npm run build
-    # deploy: |
-    #   npm run build
+
 # The size of the persistent disk of the application (in MB).
 disk: 2048
 
