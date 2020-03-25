@@ -15,6 +15,9 @@ hooks:
 # The size of the persistent disk of the application (in MB).
 disk: 2048
 
+relationships:
+  backend: "wordpress:http"
+
 # The configuration of the application when it is exposed to the web.
 web:
     locations:
