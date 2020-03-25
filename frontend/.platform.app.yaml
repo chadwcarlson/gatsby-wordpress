@@ -28,6 +28,7 @@ web:
             scripts: false
             allow: true
 
+# public/page-data
 mounts:
   '/.cache':
       source: local

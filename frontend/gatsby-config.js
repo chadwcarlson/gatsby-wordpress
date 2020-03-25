@@ -21,7 +21,7 @@ module.exports = {
          */
         // baseUrl: `config.getRoute("wordpress").url.split("/")[2]`,
         // baseUrl: config.getRoute("wordpress").url.split("/")[2],
-        baseUrl: `${config.credentials('backend').host}`,
+        baseUrl: `${config.getRoute("wordpress").url.split("/")[2]}`,
         // The protocol. This can be http or https.
         protocol: `https`,
         // Indicates whether the site is hosted on wordpress.com.
