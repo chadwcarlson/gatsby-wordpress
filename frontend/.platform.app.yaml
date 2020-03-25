@@ -11,15 +11,9 @@ hooks:
     # Build hooks can modify the application files on disk but not access any services like databases.
     build: |
       npm run build
-      chmod +x test.sh
-    deploy: |
-      cp test.sh testing/test.sh
 
 # The size of the persistent disk of the application (in MB).
 disk: 2048
-
-# relationships:
-#   backend: "wordpress:http"
 
 # The configuration of the application when it is exposed to the web.
 web:
@@ -35,9 +29,3 @@ mounts:
   '/.cache':
       source: local
       source_path: cache
-  '/.config':
-      source: local
-      source_path: cache
-  '/testing':
-      source: local
-      source_path: testing
