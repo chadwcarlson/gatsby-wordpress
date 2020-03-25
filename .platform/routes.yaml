@@ -6,11 +6,11 @@
     type: redirect
     to: "https://www.{default}/"
 
-"https://www.backend.{default}/":
+"https://www.{default}/api":
   type: upstream
   upstream: "wordpress:http"
 
-"https://backend.{default}/":
+"https://{default}/api":
     type: redirect
     id: 'wordpress'
-    to: "https://www.backend.{default}/"
+    to: "https://www.{default}/api"
