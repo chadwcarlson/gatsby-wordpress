@@ -20,10 +20,6 @@ module.exports = {
          * Example : 'demo.wp-api.org' or 'www.example-site.com'
          */
         baseUrl: "backend.pr-1-djjnuwy-wkdydhxitndua.eu-3.platformsh.site",
-        // baseUrl: "backend.local",
-        // baseUrl: `config.getRoute("wordpress").url.split("/")[2]`,
-        // baseUrl: config.getRoute("wordpress").url.split("/")[2],
-        // baseUrl: `${config.getRoute("wordpress").url.split("/")[2]}`,
         // The protocol. This can be http or https.
         protocol: `https`,
         // Indicates whether the site is hosted on wordpress.com.
@@ -45,7 +41,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${process.env.PLATFORM_APP_DIR}/public/images`,
+        path: `${__dirname}/src/images`,
       },
     },
     `gatsby-transformer-sharp`,
