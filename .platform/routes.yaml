@@ -8,9 +8,9 @@
 
 "https://www.backend.{default}/":
   type: upstream
-  id: 'wordpress'
   upstream: "wordpress:http"
 
 "https://backend.{default}/":
     type: redirect
+    id: 'wordpress'
     to: "https://www.backend.{default}/"
