@@ -14,11 +14,3 @@
     type: redirect
     id: 'wordpress'
     to: "https://www.backend.{default}/"
-
-"https://www.{default}/api":
-  type: upstream
-  upstream: "wordpress2:http"
-
-"https://{default}/api":
-    type: redirect
-    to: "https://www.{default}/api"
