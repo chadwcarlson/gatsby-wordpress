@@ -21,5 +21,4 @@
 
 "https://{default}/api":
     type: redirect
-    id: 'wordpress'
     to: "https://www.{default}/api"
