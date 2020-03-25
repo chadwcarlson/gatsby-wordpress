@@ -10,7 +10,6 @@ type: 'nodejs:12'
 hooks:
     # Build hooks can modify the application files on disk but not access any services like databases.
     build: |
-      chmod +x update_backendurl.sh
       npm run build
     deploy: |
       . update_backendurl.sh
