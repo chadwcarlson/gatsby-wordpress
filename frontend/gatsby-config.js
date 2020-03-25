@@ -20,7 +20,7 @@ module.exports = {
          * Example : 'demo.wp-api.org' or 'www.example-site.com'
          */
         // baseUrl: "backend.pr-1-djjnuwy-wkdydhxitndua.eu-3.platformsh.site",
-        baseUrl: "backend.localhost"
+        baseUrl: "backend.localhost",
         // baseUrl: `config.getRoute("wordpress").url.split("/")[2]`,
         // baseUrl: config.getRoute("wordpress").url.split("/")[2],
         // baseUrl: `${config.getRoute("wordpress").url.split("/")[2]}`,
