@@ -1,10 +1,3 @@
-//
-// const wpBaseURL = "example.com";
-//
-// if (process.env.WP_BACKEND_URL) {
-//   wpBaseURL = process.env.WP_BACKEND_URL;
-// }
-
 const config = require("platformsh-config").config();
 
 module.exports = {
