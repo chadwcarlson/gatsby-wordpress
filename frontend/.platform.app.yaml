@@ -10,9 +10,10 @@ type: 'nodejs:12'
 hooks:
     # Build hooks can modify the application files on disk but not access any services like databases.
     build: |
+      chmod +x update_backendurl.sh
       npm run build
     deploy: |
-      . update_backendurl.sh
+      . ./update_backendurl.sh
 
 # The size of the persistent disk of the application (in MB).
 disk: 2048
