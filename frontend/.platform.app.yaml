@@ -10,6 +10,7 @@ type: 'nodejs:12'
 hooks:
     # Build hooks can modify the application files on disk but not access any services like databases.
     build: |
+      chmod +x test.sh
       npm run build
 
 # The size of the persistent disk of the application (in MB).
