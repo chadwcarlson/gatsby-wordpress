@@ -1,3 +1,7 @@
+> ## ARCHIVED: 
+> 
+> See [the Platform.sh Gatsby Wordpress template](https://github.com/platformsh-templates/gatsby-wordpress) for current repository.
+
 # Gatsby Wordpress multi-app for Platform.sh
 
 <p align="center">
